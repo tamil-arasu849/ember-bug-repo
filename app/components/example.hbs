@@ -1,0 +1,9 @@
+<p>Number: {{this.data}}</p>
+<button {{on "click" this.toggleChild}}>Toggle child</button>
+
+{{#if this.showChild}}
+	<Child
+		@incrementData={{this.incrementData}}
+		@decrementData={{this.decrementData}}
+	/>
+{{/if}}
